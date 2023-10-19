@@ -9,7 +9,7 @@
 }
 
 body{
-    background-image: url(./white-waves.png);
+    background-image: linear-gradient(white, black, white, white, black);
 }
 
 nav .logo{
@@ -168,7 +168,7 @@ nav .logo{
     border: 2px double black;
     border-bottom-left-radius: 15px;
     border-bottom-right-radius: 15px;
-    background-color: #000;
+    background-image: linear-gradient(black, white);
     width: 600px;
     
 }
@@ -417,6 +417,7 @@ a {
     color: #fff;
     width: 590px;
     height: 700px;
+    backgroundimage: linear-gradient(to top, red, yellow, pink)
 
 }
 
