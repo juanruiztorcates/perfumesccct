@@ -23,7 +23,7 @@ nav .logo{
 }
 
 :root {
-    --link-1: gold;
+    --link-1: goldenrod;
     --link-2: goldenrod;
 }
 
@@ -163,15 +163,24 @@ ul li:hover {
     font-family: Merriweather, serif;
     color: #fff;
 
-    font-size: 1.7rem;
+    font-size: 1.5rem;
     font-weight: 100;
     justify-content: center;
     padding: 1rem;
     padding-top: 5px;
-    width: 600px;
+    width: 1200px;
     margin-bottom: 3rem;
     margin-top: 1rem;
     background-image: linear-gradient(black, black, black, black, white);
+    
+}
+.label-2 a {
+    transition: 1s;
+}
+
+.label-2 a:hover {
+    color: burlywood;
+    transition: 1s;
 }
 
 .label-3 {
@@ -213,7 +222,7 @@ ul li:hover {
     color: burlywood;
     background-color: transparent;
     font-weight: 100;
-    font-size: 1.8rem;
+    font-size: 1.2rem;
     border-radius: 10px;
     padding: .3rem;
     display:flexbox;
@@ -226,6 +235,12 @@ ul li:hover {
    
 }
 
+.seccion-2:hover {
+    color: black;
+    transform: scale(1.1);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
 .seccion-3 {
     display: flex;
     flex-wrap: wrap;
@@ -236,13 +251,6 @@ ul li:hover {
     font-size: 7rem;
 }  
 
-
-
-.seccion-2:hover {
-    color: white;
-    transform: scale(1.2);
-    font-family: Arial, Helvetica, sans-serif;
-}
 
 .grid-1 {
     display: grid;
@@ -263,8 +271,8 @@ ul li:hover {
 }
 
 .card-1 {
-    display: grid;
-    grid-template-columns: auto;
+    display: flex;
+    flex-wrap: wrap;
    width: 200px;
    height: 280px;
     position:static;
@@ -306,8 +314,8 @@ ul li:hover {
     width: 200px;
     height: 80px;
     display: flex;
-    color: white;
-    background-color: black;
+    color: black;
+    background-color: transparent;
     flex-direction: column-reverse;
     align-items: center;
     text-align: center;
@@ -320,48 +328,33 @@ ul li:hover {
 
 h3 {
     font-weight: 200;
+}
 
+.ver-mas {
+    
+    padding: 0.5rem;
+    color: black;
+}
+.button-mas {
+    margin-top: -80px;
+    color: #000;
 }
 
 .over-flow {
     display: flex;
-    width: auto;
+    width: 70%;
     height: 380px;
     background-color: transparent;
     overflow-x:scroll ;
-    flex-direction: row;
-    justify-content: space-between;
-    
-    gap: 11rem;
-    margin: auto;
+
+    gap: 9rem;
     align-items: center;
     padding: 3rem;
-    margin-bottom: -3px;
-    margin-right: 60px;
+    margin: auto;
+   
     
 }
 
-
-.texto-2 {
-    height: 300px;
-    width: 300px;
-    
-    transition: all .7s;
-    text-align: center;
-    -webkit-transition: all 2s;
-    transition-timing-function:cubic-bezier(1, .46, .48, 1.68);
-    -webkit-transition-timing-function: cubic-bezier(1, .46, .48, 1.68);
-    object-fit: cover;
-    object-position: left;
-    
-}
-.texto-2:hover{
-    background-color: #000;
-    color: #fff;
-    width: 590px;
-    height: 700px;
-
-}
 
 .contenedor-secciones {
     width: 100%;
@@ -377,34 +370,44 @@ h3 {
     display: flex;
     justify-content: center;
     width: 20%;
-    padding: 1rem;
-    background-image: linear-gradient(black, black, black, white);
-    color: white;
+    padding: 0.3rem;
+    background-color: #000;
     border-radius: 10px;
-    padding-top: 4px;
+    transition: 1.5s;
 }
+    .seccion-5:hover {
+        background-color: grey;
+    }
 
 .seccion-6 {
     display: flex;
     justify-content: center;
     width: 20%;
-    padding: 1rem;
-    background-image: linear-gradient(black, black, black, white);
-    color: white;
+    padding: 0.3;
+    background-color: #000;
     border-radius: 10px;
-    padding-top: 4px;
+    transition: 1.5s;
 }
+
+.seccion-6:hover {
+    background-color: grey;
+}
+
+
 
 .seccion-7 {
     display: flex;
     justify-content: center;
     width: 20%;
-    padding: 1rem;
-    background-image: linear-gradient(black, black, black, white);
-    color: white;
+    padding: .3rem;
+    background-color: #000;
     border-radius: 10px;
     padding-top: 4px;
+    transition: 1.5s;
 }
+    .seccion-7:hover {
+        background-color: grey;
+    }
 
 /* contato */
 
@@ -413,10 +416,10 @@ h3 {
     display: grid;
     width: auto;
 
-    margin-top: 8rem;
+    margin-top: 1rem;
     margin-bottom: 4rem;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-    grid-template-rows: 90px 90px 90px 50px 90px 90px 90px 90px 90px;
+    grid-template-rows: 150px 90px 90px 50px 90px 90px 90px 90px 90px;
 }
 
 
@@ -430,7 +433,7 @@ h3 {
     padding: 5rem;
 
     font-family: Merriweather, serif;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     border-bottom: #000 solid 2px;
     width: 100%;
 }
@@ -449,7 +452,7 @@ iframe {
     height: 80%;   
     margin: auto;
     display: block;
-    border: solid 4px black;
+    border: solid 2px black;
     border-radius: 10px;
 }
 
@@ -497,7 +500,8 @@ iframe {
 
     font-size: 1.7rem;
     align-items: center;
-    padding-left: 3rem;
+    padding-left: 5rem;
+
 }
 
 
@@ -531,8 +535,7 @@ iframe {
     justify-content: space-between;
     align-self: auto;
     text-align: center;
-    gap: 1rem;
-    
+   margin-bottom: 4rem;
     
 }
 
