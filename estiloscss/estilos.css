@@ -23,7 +23,7 @@ nav .logo{
 }
 
 :root {
-    --link-1: goldenrod;
+    --link-1: burlywood;
     --link-2: goldenrod;
 }
 
@@ -119,32 +119,29 @@ ul li:hover {
 
 
 .label-1 {
+    display:flex;
+    flex: auto;
+    align-items: center;
+    justify-content: center;
+    width: 70%;
     font-family: pinyon script;
     background-color: #000;
     color: white;
     font-weight: 300;
-    font-size: 6rem;
-    margin-bottom: 3rem;
-    margin-left: 400px;
+    font-size: 4rem;
+
+    margin: auto;
     margin-right: 0px;
+    margin-bottom: 3rem;
     padding: .2rem 1rem; 
-    border-bottom-left-radius: 50px;
-    border-radius: 7px double;
-    border: 4px solid burlywood;
-   
-    display:flex;
-    flex: auto;
-    flex-wrap: wrap;
-    text-align: center;
-    align-items: center;
-    justify-content: center;
+    border: 2px solid burlywood;
+    border-bottom-left-radius: 30px;
     gap: 1rem;
-    background-size: contain;
 }
     .label-1 div{
     font-family: Merriweather, serif;
     color: aliceblue;
-    font-size: 4rem;
+    font-size: 3rem;
     }
 
 
@@ -161,17 +158,17 @@ ul li:hover {
     display: flex;
     text-align: center;
     font-family: Merriweather, serif;
+    background-image: linear-gradient(black, black, black, black, white);
     color: #fff;
+    justify-content: center;
 
     font-size: 1.5rem;
     font-weight: 100;
-    justify-content: center;
     padding: 1rem;
     padding-top: 5px;
-    width: 1200px;
+    width: 80%;
     margin-bottom: 3rem;
     margin-top: 1rem;
-    background-image: linear-gradient(black, black, black, black, white);
     
 }
 .label-2 a {
@@ -235,11 +232,12 @@ ul li:hover {
    
 }
 
-.seccion-2:hover {
+
+/* .seccion-2:hover {
     color: black;
     transform: scale(1.1);
     font-family: Arial, Helvetica, sans-serif;
-}
+} */
 
 .seccion-3 {
     display: flex;
@@ -369,28 +367,40 @@ h3 {
 .seccion-5 {
     display: flex;
     justify-content: center;
-    width: 20%;
     padding: 0.3rem;
     background-color: #000;
     border-radius: 10px;
+    
+    padding-top: 10px;
+    padding: 20px 100px;
+    color: white;
     transition: 1.5s;
+    cursor: pointer;
 }
     .seccion-5:hover {
         background-color: grey;
+        color: burlywood;
+        font-size: 1.3rem;
+
     }
 
 .seccion-6 {
     display: flex;
     justify-content: center;
-    width: 20%;
+   
     padding: 0.3;
     background-color: #000;
     border-radius: 10px;
     transition: 1.5s;
+    padding: 20px 100px;
+    color: #fff;
+    cursor: pointer;
 }
 
 .seccion-6:hover {
     background-color: grey;
+    color: burlywood;
+    font-size: 1.3rem;
 }
 
 
@@ -398,15 +408,20 @@ h3 {
 .seccion-7 {
     display: flex;
     justify-content: center;
-    width: 20%;
+    
     padding: .3rem;
     background-color: #000;
     border-radius: 10px;
-    padding-top: 4px;
+    padding-top: 10px;
+    padding: 20px 100px;
+    color: #fff;
     transition: 1.5s;
+    cursor: pointer;
 }
     .seccion-7:hover {
         background-color: grey;
+        color: burlywood;
+        font-size: 1.3rem;
     }
 
 /* contato */
@@ -498,10 +513,9 @@ iframe {
     grid-column-start: 1;
     grid-column-end: 6;
 
-    font-size: 1.7rem;
+    font-size: 1.5rem;
     align-items: center;
     padding-left: 5rem;
-
 }
 
 
