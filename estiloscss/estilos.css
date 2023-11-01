@@ -2,6 +2,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Pinyon+Script&family=Rubik+Iso&display=swap');
 
+
+
 * {
     margin: 0;
     padding: 0;
@@ -11,18 +13,20 @@
     --link-1: burlywood;
     --link-2: goldenrod;
 }
-
-
 a {
     text-decoration:none;
     color: white;
 }
 
+/* Menu de navegación */
 
 .logo{
     height: 80px;
 }
-
+.enlace {
+    position: absolute;
+    padding: 3px 50px;
+}
 .menu {
     position: fixed;
     background-color: black;
@@ -30,10 +34,7 @@ a {
     height: 86px;
 }
 
-.enlace {
-    position: absolute;
-    padding: 3px 50px;
-}
+
 
 .menu ul {
     float: right;
@@ -71,11 +72,6 @@ li a.menu-link, li a:hover {
     display: none;
 }
 
-.menu-item7 {
-    float: right;
-    display: none;
-}
-
 
 
 #check {
@@ -86,110 +82,190 @@ li a.menu-link, li a:hover {
     .enlace {
         padding-left: 20px;
     }
-
+    
     .menu ul li a{
         font-size: 1rem;
     }
-   
-
+    
 }
 
 @media (max-width: 1223px){
+    
     .checkbutton {
         display: block;
     }
-
+    .enlace {
+        padding: 8px;
+    }
+    .logo {
+        margin-left: 155%;
+        
+    }
+    
+    .menu {
+        height: 96px;
+    }
+    
     ul {
         position: fixed;
         width: 100%;
         height: 100vh;
         background: black;
-        top: 80px;
+        top: 96px;
         left: -100%;
         text-align: center;
         transition: all 1s;
     }
-     .menu ul li{
+    .menu ul li{
         display: block;
         margin: 50px 0;
         line-height: 30px;
-     }
-
-     .menu ul li a{
+    }
+    
+    .menu ul li a{
         font-size: 20px;
-     }
-
-     li a:hover, li a:active{
+        width: 100%;
+        font-weight: 700;
+        
+    }
+    
+    li a:hover, li a:active{
         background: none;
         color: burlywood;
-     }
-
-     #check:checked ~ ul {
-        left:0;
-     }
-
+    }
+    
+    #check:checked ~ ul {
+        left:-20%;
+    }
+    
 }
 
-/* .menu-link {
-    text-decoration: none;
-    color: aliceblue;
+/*Buscador interno*/
+
+.buscador {
     width: 100%;
-    font-weight: 700;
-} */
-
-
-/* .menu-item {
-    position:relative;
-    transition: color 0.4s ease-in-out;
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    flex: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90px;
 }
-.menu-item::before {
-    content: "";
-    position:absolute;
-    background-color: var(--link-1);
-    transform: scaleX(0);
-    transition: transform 0.3s ease-in-out;
-    top: 100%;
-    width: 100%;
-    height: 2px;
+
+input {
+    height: 2rem;
+    width: 0%;
+    padding: 0 14px;
+    color: black;
+    border-radius: 60px;
+    font-size: 1rem;
+    border: 2px solid burlywood;
+    transition: all 1s;
+    font-weight: 100;
+    opacity: .6;
 }
-.menu-item:hover::before {
-    transform: scaleX(1.1);
+
+.bs-div1 {
+    padding-right: 1px;
+}
+
+
+::placeholder {
+    color: #7a7a7a;
+    font-size: medium;
+    text-align: center;
+}
+
+.buscador i {
+   position: relative;
+    transition: all 1s ease;
+}
+
+.bs-div1 input:hover ~ i {
+  transform: translate(100px, 0);
+}
+
+.input-1:hover {
+    width: 270px;
+    border: 2px double black;
+    
+}
+
+
+/* .buscador div{
+    padding;
 } */
+/* transform: rotate(-360deg); */
 
 
 
-/* ul a {
-    display:block;
-    color:#fff;
-    text-decoration:none;
-    font-weight:0px;
-    font-size:1.1rem;
-    padding:2px;
-    font-family:Merriweather, serif;
-    text-transform:uppercase;
-    letter-spacing:1px;
-}
 
-
-ul li {
-    background-color: 000;
-    position:relative;
-    float:left;
-    gap: 3rem;
-} */
-/* ul li:hover {
+/* .btn {
+    width: auto;
+    margin-top: 23px;
+    margin: auto;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 40px;
+    height: 40px;
     background: black;
+    line-height: 40px;
+    border-radius: 50%;
+    text-align: center;
+    cursor: pointer;
+    transition: 1s;
+    
+    .btn:hover {
+    background-color: burlywood;
+    width: 50px;
+    height: 50px;
+   
 } */
 
+
+/* Buscador interno / Menu de Navegacion*/
+
+
+
+
+/* PRUEBA START */
+
+.test-flex {
+    display: flex;
+}
+
+.prueba-3 {
+    background-color: red;
+    height: 180px;
+    width: 120px;
+    text-align: center;
+    padding: 10px;
+    overflow:scroll;
+
+}
+
+.prueba-4 {
+    background-color: blue;
+    height: 130px;
+    width: 120px;
+}
+.prueba-5 {
+    background-color: burlywood;
+    height: 150px;
+    width: 120px;
+}
+
+
+/* PRUEBA End */
+
+
+
+/* Contenido del body  */
 
 body{
-    background-image: url(../imagenes/white-waves.png);
+    background-image: url(../imagenes/white-waves.jpg);
+    
 }
-
 
 .img-portada {
     display: flex;
@@ -197,16 +273,12 @@ body{
     width: 100%;
 }
 
-
-
-
 .img-1 {
     width: 80%;
     height: auto;
     margin-top: 7rem;
     margin-bottom: 3rem;
 }
-
 
 .label-1 {
     display:flex;
@@ -228,15 +300,11 @@ body{
     gap: 1rem;
 }
 
-.label-1 div{
+.label-1 span{
     font-family: Merriweather, serif;
     color: aliceblue;
     font-size: 3rem;
 }
-
-
-
-
 
 .secciones {
     display: flex;
@@ -263,8 +331,8 @@ body{
     margin-bottom: 3rem;
     margin-top: 1rem;
     border-radius: 5px 5px 0px 0px;
-    
 }
+
 .label-2 a {
     transition: 1s;
 }
@@ -282,7 +350,6 @@ body{
     margin-bottom: 3rem;  
 }
 
-
 .boxing-1 {
     display: flex;
     flex-wrap: wrap;
@@ -296,7 +363,6 @@ body{
     font-size: 2rem;
 }
 
-
 .seccion-1 {
     display: flex;
     flex: auto;
@@ -306,8 +372,6 @@ body{
     
     font-size: 7rem;
 }
-
-
 
 .seccion-3 {
     display: flex;
@@ -319,14 +383,12 @@ body{
     font-size: 7rem;
 }  
 
-
 .grid-1 {
     display: grid;
     justify-content: center;
     width: 85%;
     margin: auto;
-    padding: 20px;
-    
+    padding: 20px; 
 }
 
 .grid-2 {
@@ -338,7 +400,6 @@ body{
     gap: 7rem;
 }
 
-
 .card-1 {
     display: flex;
     flex-wrap: wrap;
@@ -349,11 +410,8 @@ body{
     justify-content: center;
     align-items: center;
     transition:all .7s;
-    cursor: pointer;
-    
+    cursor: pointer; 
 }
-
-
 
 .card-1:hover {
     transform: scale(1.2);
@@ -424,42 +482,29 @@ h3 {
     align-items: center;
     padding: 3rem;
     margin: auto;
-    
-    
 }
-
-
-
 
 .contenedor-secciones {
     display: flex;
     flex: auto;
     flex-wrap: 1fr 1fr 1fr;
-    
     align-items: center;
 
     width: 100%;
     margin: auto;
-    padding: auto;
 }
 
 .seccion-2 {
     display: flex;
     font-family: sans-serif, serif;
     background-color: transparent;
-    font-weight: 100;
-    font-size: 1.2rem;
+    font-weight: 300;
+    font-size: 5rem;
     border-radius: 10px;
-    padding: auto;
     transition: 1s;
     width: 100%;
     justify-content: center;
-    
 }
-
-
-
-
 
 .seccion-5 {
     padding: 1rem;
@@ -471,14 +516,12 @@ h3 {
     width: 80%;
     margin: auto;
     justify-content: center;
-    
 }
 
 .seccion-5:hover {
     background-color: grey;
     color: burlywood;
     font-size: 1.3rem;
-    
 }
 
 .seccion-6 {
@@ -490,16 +533,12 @@ h3 {
     cursor: pointer;
     width: 80%;
     margin: auto;
-    
-    
 }
 .seccion-6:hover {
     background-color: grey;
     color: burlywood;
     font-size: 1.3rem;
 }
-
-
 
 .seccion-7 {
     padding: 1rem;
@@ -519,7 +558,6 @@ h3 {
 }
 
 /* contato */
-
 
 .box-1 {
     display: grid;
@@ -612,13 +650,9 @@ iframe {
     padding-left: 5rem;
 }
 
-
-
-
 .contacto-redes {
     color: #000;
 }
-
 
 .footer-1 {
     display: flex;
@@ -631,7 +665,6 @@ iframe {
     justify-content: space-around;
     
 }
-
 
 .footer-2 {
     flex-direction: column;
@@ -651,8 +684,6 @@ iframe {
     color: #fff;
     padding: 1rem;
 }
-
-
 
 @media (max-width: 1168px) { 
     
@@ -679,6 +710,8 @@ iframe {
         text-align:center;
         align-items: center;
         padding: 2rem 5rem;
+        background: white;
+        position:unset;
         
         font-family: Merriweather, serif;
         font-size: 1.2rem;
@@ -749,11 +782,6 @@ iframe {
         text-align: left;
         padding-left: 3.8rem;
     }
-    
-    
-    
-    
-
 }
 
 
@@ -787,7 +815,6 @@ iframe {
     .seccion-6 {
         padding-top: 5px;
         padding-bottom: 5px;
-        padding: auto;
         margin: auto;
         width: 60%;
         
@@ -796,7 +823,6 @@ iframe {
         
         padding-top: 5px;
         padding-bottom: 5px;
-        padding: auto;
         margin: auto;
         width: 60%;
         
@@ -804,7 +830,6 @@ iframe {
     .seccion-7 {
         padding-top: 5px;
         padding-bottom: 5px;
-        padding: auto;
         margin: auto;
         width: 60%;
     } 
@@ -813,8 +838,6 @@ iframe {
         grid-template-columns: 1fr;
         gap: 5rem;
     } 
-    
-
 }
 
 
